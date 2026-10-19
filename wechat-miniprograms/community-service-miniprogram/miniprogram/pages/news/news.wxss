@@ -1,0 +1,32 @@
+.row {
+  padding: 80rpx 40rpx;
+  border-bottom: 1px solid #bdbdbd;
+  /* background-color: chartreuse; */
+}
+
+.row .title {
+  font-size:x-large;
+}
+.row .content{
+  padding-top: 20rpx;
+  padding-left: 70rpx;
+
+}
+.box{
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  color: #515151;
+  flex-direction: row;
+  font-size: small;
+  justify-content:left;
+
+}
+.row .hits,.author {
+  color: #707070;
+  font-size:small;
+  padding-top: 10rpx;
+  padding-left: 70rpx;
+  text-align:left;
+  flex-direction: column;
+}

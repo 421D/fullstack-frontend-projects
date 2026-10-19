@@ -1,0 +1,76 @@
+
+*{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	font-family:"华文细黑";
+}
+
+
+#big{
+	width:100%;
+	height:700px;
+    background-image:url(../pic/login_bg.jpg) ;
+    margin-bottom: -200px;
+	}
+	
+#kuang{
+	width:420px;
+	height:380px;
+	float:right;
+	margin:200px 100px 0px 0px;
+	border:1px #b8d09d solid;
+	background-color:#FFF;
+	}
+	
+#kuang_up{
+	width:420px;
+    height:50px;
+    text-align: center;
+	}
+#kuang_up p{
+    margin-top: 50px;
+	text-align:center;
+	color:#0B4219;
+	font-size:1.82em;
+	}
+
+#kuang_bottom{
+	width:420px;
+	height:280px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	}
+	#kuang_bottom input{
+		margin:10px 0;
+	}
+#kuang_bottom .btn{
+	outline:none;
+	width:320px; 
+	height:50px;
+	background:#b8d09d;
+	color:#FFF;
+	font-size:1.2em;
+	}
+#kuang_bottom .fx{
+	width:320px;
+	height:50px;
+	margin:20px 0px 0px 20px;
+	}
+	
+#kuang a:link {
+		color:#0B4219;
+		text-decoration:none;
+		}    
+		
+#kuang a:visited {
+			color:#0B4219;
+		 text-decoration:none;
+		 } 
+		 
+#kuang a:hover {
+		color:#b8d09d;
+		text-decoration:none;
+		}   

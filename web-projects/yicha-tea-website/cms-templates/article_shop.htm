@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="gb2312">
+   <title>详情_荷花酥</title>
+   <link href="http://localhost/tea/templets/default/images/article_shop.css" rel="stylesheet" type="text/css" />
+   <link href="http://localhost/tea/templets/default/images/head.css" rel="stylesheet" />
+   <link href="http://localhost/tea/templets/default/images/footer.css" rel="stylesheet" />
+   <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+   <script src='http://localhost/tea/templets/default/js/shop_arc_jquery.js'></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+</head>
+
+<body>
+ <!------------------------------banner----------------------->
+    <!--<div class='head'>
+        <ul>
+         	<li></li>
+            <li><a href="index.htm" target="_blank">
+            	<img src="http://localhost/tea/templets/default/images/logo.png" width="100" height="50"></a>
+            </li>
+            <li><a href="index.htm" target="_blank">首页</a></li>
+            <li><a href="shop_list_tea.html" target="_blank">茶叶</a></li>
+            <li><a href="shop_list_cup.html" target="_blank">糕点</a></li>
+            <li><a href="shop_list_cup.html" target="_blank">茶具</a></li>
+            <li><a>论坛</a></li>
+            <li><a href="article_pic.htm" target="_blank">关于我们</a></li>
+            <li><a href="inform_list.htm" target="_blank">消息</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="img"><a href="login.htm" target="_blank"><img src="http://localhost/tea/templets/default/images/banner_login.png" width="30" height="30"></a></li>
+            <li class="img"><a><img src="http://localhost/tea/templets/default/images/banner_gwc.png" width="30" height="30"></a></li>
+            <li></li>
+        </ul>
+    </div>-->
+        {dede:include filename="head.htm"/}
+
+<!------------------------------banner----------------------->
+
+
+<div class='content'>
+  <div id="div1">
+    <div class="div2">
+      <img src="http://localhost/tea/templets/default/images/shop_arc_cake_08.png" width="920" height="518"></div>
+    <div class="div3">
+      <div class="div4"><img src="http://localhost/tea/templets/default/images/shop_arc_cake_08.png" width="150" height="84"></div>
+      <div class="div5"><img src="http://localhost/tea/templets/default/images/shop_arc_cake_10.png" height="84"></div>
+      <div class="div6"><img src="http://localhost/tea/templets/default/images/shop_arc_cake_09.png" width="150" height="84"></div>
+    </div>
+
+
+  </div>
+
+
+  <div id="div2">
+    <div class="wzdiv1">
+      <p align="center">糕 点</p>
+
+      <p class="p1">/中 秋 月 饼 / 荷 花 酥 饼/ 蛋 黄 酥
+        饼/<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绿豆糕是传统特色糕点之一，属消暑小食。相传中国古代先民，为寻求平安健康，端午节时会食用粽子、雄黄酒、绿豆糕、咸鸭蛋这些食物。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;荷花酥饼是有特制的脂烙酥而得名，特点是嫩粉色，层次清晰，脆而不碎，油而不腻，香酥适口。其中，尤其以荷花酥饼最为盛名<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蛋黄酥饼是有特制的脂烙酥而得名，特点是金黄色，层次清晰，脆而不碎，油而不腻，香酥适口。其中，尤其以金华酥饼最为盛名
+      </p>
+
+      <br>
+
+    </div>
+
+
+
+    <div class="wzdiv1" align="center">
+      <div class="twdiv">
+        <div class="tpdiv1"><img src="http://localhost/tea/templets/default/images/shop_arc_cake_08.png" width="350" height="200"></div>
+        <div class="wz">￥{dede:field name='price'/}元/盒</div>
+      </div>
+      <br>
+      <div class="wzdiv2">
+
+        <div class="wzdiv3">约{dede:field name='gg'/}</div>
+      </div>
+      <br><br>
+      <div class="wzdiv2">
+
+        <div class="wzdiv3">{dede:field name='fx'/}</div>
+      </div>
+      <br><br>
+      <div class="wzdiv2">
+
+        <div class="wzdiv3">{dede:field name='bh'/}</div>
+      </div>
+      <br><br>
+      <div class="wzdiv2">
+
+        <div class="wzdiv3">{dede:field name='brand'/}</div>
+      </div>
+      <br><br><br>
+
+      
+      
+      
+     <!-- <div class="gwc">
+        <div class="gwc1"><a href="#"><img src="http://localhost/tea/templets/default/images/article_shop_01.png"></a></div>
+        &nbsp; &nbsp; &nbsp;
+		<div class="gwc2"><a href="#" ><img src="http://localhost/tea/templets/default/images/article_shop_02.png"></a></div>-->
+        
+   <!--  </div>-->
+    
+    
+    
+    
+     <div class="shop_buy">
+  <form id="formcar" name="formcar" method="post" action="{dede:field name='phpurl'/}/posttocar.php">
+   <input type="hidden" name="id" value="{dede:field.id/}" />
+   <input type="hidden" name="title" value="{dede:field.title/}" />
+   <input type="hidden" name="price" value="{dede:field.trueprice/}" />
+   <input type="hidden" name="units" value="{dede:field.units/}" />
+	<input type="submit" class="sub_shop" value="" /><br /> <!--我们加进去的 -->
+   <span><a href="{dede:field name='phpurl'/}/car.php" target="_blank">查看购物车</a></span><br />
+  </form>
+</div> 
+    </div>
+  </div>
+
+  <br><br>
+  <hr>
+
+  <p align="center">【工艺】</p>
+  <div id="bigtudiv1"><img src="http://localhost/tea/templets/default/images/shop_arc_cake_04.png" width="1100" height="620"></div>
+  <div id="bigtudiv2"><img src="http://localhost/tea/templets/default/images/shop_arc_cake_03.png" width="1100" height="620"></div>
+
+  <div id="sptj">
+    <div class="sptj">&nbsp;&nbsp;商品推荐</div>
+    <div id="sptj1">
+      <div class="sptj1">
+        <div class="sptj2"><img src="http://localhost/tea/templets/default/images/shop_list_tea_11.png" width="200" height="200"></div>
+        <p align="center" class="p1">茶叶</p>
+      </div>
+      <div class="sptj1">
+        <div class="sptj2"><img src="http://localhost/tea/templets/default/images/shop_list_cup_11.png" width="200" height="200"></div>
+        <p align="center" class="p1">茶具</p>
+      </div>
+      <div class="sptj1">
+        <div class="sptj2"><img src="http://localhost/tea/templets/default/images/shop_list_cake_06.png" width="200" height="200"></div>
+        <p align="center" class="p1">糕点</p>
+      </div>
+      <div class="sptj1">
+        <div class="sptj2"><img src="http://localhost/tea/templets/default/images/shop_list_tea_06.png" width="200" height="200"></div>
+        <p align="center" class="p1">其他</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  
+  
+{dede:include filename="footer.htm"/}
+<!------------------------------footer----------------------->
+<!--<div id="footer" align="center">
+	<div class="footer-logo" >
+	  <p><img src="http://localhost/tea/templets/default/images/logo.png" height="73" ></p>
+	</div>
+    
+    <div class="footer-nav">
+        <a href="#">联系我们</a>
+        <span>|</span>
+        <a href="#">订购帮助</a>
+        <span>|</span>
+        <a href="#">企业合作</a>
+        <span>|</span>
+        <a href="#">生产经营资质</a>
+        <span>|</span>
+        <a href="#">公告专区</a>
+    </div>
+    <div class="footer-icon">
+        <p><a href="#" target="_blank">
+          <img  src="http://localhost/tea/templets/default/images/footer_weixin.PNG" width="60px">
+        </a>
+          <a  href="#" class="footer-weixin">            
+            <img  src="http://localhost/tea/templets/default/images/footer_xinlang.PNG" width="60px">
+          </a>
+          <a  href="#" class="footer-app">
+            <img  src="http://localhost/tea/templets/default/images/footer_app.PNG" width="60px" >
+        </a></p>
+    </div>
+    
+    <div class="footer-text">
+        <p>订购专线：400 650 2121（服务时间 08:00&ndash;22:00），企业团购热线：021-37768396<br/>
+        客服电话：021-23099721（全国），kefu@21cake.com（邮箱）<br/>
+        杭州/广州：提前5小时预订；北京：提前6小时预订；上海：提前5.5-6小时预订<br/>
+        当日配送截止下单时间：北京：16:50；上海：16:30；杭州/广州：13:50；天津：10:30；苏州/无锡/深圳：11:00<br/>
+        网站注册公司名称11111111111111111111111111111111111111111111111 </p>
+        <p><br/>
+        </p>
+    </div>
+    
+    
+    <div class="footer-copyright">
+        <span>Copyright &copy; YiCha Tea</a></span>
+    </div>
+</div>-->
+<!------------------------------footer----------------------->
+</body>
+
+</html>

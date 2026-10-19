@@ -1,0 +1,107 @@
+/* pages/post/post-detail/post-detail.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-image {
+  width:100%;
+  height: 460rpx;
+}
+
+.title {
+  font-family: "华文细黑";
+  font-size: 20px;
+  margin: 30rpx;
+  letter-spacing: 2px;
+  color: #666666;
+}
+
+.author-date {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15rpx;
+  margin-left: 30rpx;
+  align-items: center;
+  justify-content: space-between;
+  font-size:11rpx;
+}
+
+.author-box {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 35rpx;
+}
+
+.avatar {
+  height: 50rpx;
+  width: 50rpx;
+}
+.data{
+  width: 100%;
+  height: auto;
+  margin-left: 30rpx;
+  color: #6b6b6b;
+}
+
+.author {
+  font-weight: 100;
+  margin-left: 20rpx;
+  color: #666;
+}
+
+.date {
+  color: #666;
+  margin-right: 38rpx;
+}
+
+
+
+.detail {
+  color: #6b6b6b;
+  margin: 70rpx 22rpx 20rpx 50rpx;
+  line-height: 44rpx;
+  letter-spacing: 1px;
+  font-size:29rpx;
+}
+
+
+.img-box{
+  padding: 10rpx 0rpx 60rpx 0rpx;
+}
+.content-image{
+  width: 100%;
+  height:150rpx;
+  margin: 20rpx 0rpx;
+
+}
+
+
+
+/*点赞和评论*/
+.tool{
+  height: 64rpx;
+  margin: 20rpx 28rpx 20rpx 0;
+  display: flex;
+  justify-content: center;
+}
+.tool-item{
+  align-items: center;
+  margin-right: 30rpx;
+  display: flex;
+}
+
+.tool-item:last-child{
+  margin-right: 0rpx;
+}
+
+.tool-item image{
+  height: 50rpx;
+  width:50rpx;
+  margin-right: 20rpx;
+}
+
+.comment image{
+  transform: scale(.85);
+}

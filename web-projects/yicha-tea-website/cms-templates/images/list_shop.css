@@ -1,0 +1,36 @@
+@charset "gb2312";
+/* CSS Document */
+
+
+
+.piece{
+	width: 263px;
+	display: inline;
+	float: left;
+	margin:20px 0px 60px 10px;
+	
+}
+.kong{
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height:1000px;
+
+	
+}
+.piece a:link {
+	font-weight:700;
+		color:#0B4219;
+		text-decoration:none;
+		}    
+		
+.piece a:visited {
+		color:#0B4219;
+		text-decoration:none;
+		 } 
+		 
+.piece a:hover {
+		color:#b8d09d;
+		text-decoration:none;
+		}

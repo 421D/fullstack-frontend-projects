@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/head.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/about.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/head.js"></script>
+    <title>ABOUT US | DANY</title>
+
+   <script>
+            window.onload = () => {
+                var div = document.querySelector('.select-box')
+                var p = document.querySelector('.select-box>p')
+                var ul = document.querySelector('.select-box ul')
+                var li = document.querySelectorAll('.select-box li')
+                var input_cs = document.querySelector('[name=cs]')
+                div.addEventListener('click', function (e) {
+                    e.stopPropagation()
+                    if (this.classList.contains('select-box-focus') == true) {
+                        this.classList.remove('select-box-focus')
+                    } else {
+                        this.classList.add('select-box-focus')
+                    }
+                })
+                li[0].addEventListener('click', function () {
+                    let val = this.innerText
+                    p.innerText = `已选择城市：${val}`
+                    input_cs.setAttribute('value', val)
+                    console.log(input_cs.value)
+                })
+                li[1].addEventListener('click', function () {
+                    let val = this.innerText
+                    p.innerText = `已选择城市：${val}`
+                    input_cs.setAttribute('value', val)
+                    console.log(this.innerText)
+                })
+                li[2].addEventListener('click', function () {
+                    let val = this.innerText
+                    p.innerText = `已选择城市：${val}`
+                    input_cs.setAttribute('value', val)
+                    console.log(this.innerText)
+                })
+                li[3].addEventListener('click', function () {
+                    let val = this.innerText
+                    p.innerText = `已选择城市：${val}`
+                    input_cs.setAttribute('value', val)
+                    console.log(this.innerText)
+                })
+                li[4].addEventListener('click', function () {
+                    let val = this.innerText
+                    p.innerText = `已选择城市：${val}`
+                    input_cs.setAttribute('value', val)
+                    console.log(this.innerText)
+                })
+                li[5].addEventListener('click', function () {
+                    let val = this.innerText
+                    p.innerText = `已选择城市：${val}`
+                    input_cs.setAttribute('value', val)
+                    console.log(this.innerText)
+                })
+                document.body.addEventListener('click', function () {
+                    console.log(1)
+                    if (div.classList.contains('select-box-focus') == true)
+                        div.classList.remove('select-box-focus')
+                })
+            }
+        </script>
+    
+    </head>
+    <body>
+
+
+    <!---head--->
+    <div class="head">
+        <ul>
+            <li></li>
+            <li><a href="../webs/index.html"><img src="../pic/logo.png" width="100" height="50"></a></li>
+            <li><a href="../webs/index.html" target="_blank">首页</a></li>
+            <li><a href="../webs/list.html" target="_blank">菜单</a></li>
+            <li><a href="#">论坛</a></li>
+            <li><a href="../webs/inform.html" target="_blank">消息</a></li>
+            <li><a href="../webs/aboutus.html" target="_blank">关于我们</a></li>
+            <li href="javascript:void(0)"  onclick="tip()"><a href="#">联系我们</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="img"><a href="../webs/login.html" target="_blank"><img src="../pic/banner_login.png" width="30" height="30"></a></li>
+            <li class="img"><a href="../webs/car.html"><img src="../pic/banner_gwc.png" width="30" height="30"></a></li>
+            <li></li>
+        </ul>
+    </div>
+        <br><br><br>
+
+
+     
+    
+        <div id="toudiv">
+            <div class="toudiv"><img src="../pic/about_05.png"></div>
+            <div class="toudiv"><img src="../pic/about_03.png"></div>
+            <div class="toudiv"><img src="../pic/about_04.png"></div>
+            <div class="toudiv"><img src="../pic/about_02.png"></div>
+        </div>
+    
+        <br>
+        <p class="p2">茶 叶 起 源</p>
+        <br>
+        <p class="p1" align="center">中国是茶的原产地。中国人对茶的熟悉，上至帝王将相，文人墨客，诸子百家，下至挑夫贩夫，平民百姓，无不以茶为好。<br>人们常说：“开门七件事，柴米油盐酱醋茶”。由此可见茶已深入人民各阶层。同样少数民族也好茶，藏族的酥油茶，蒙古族的奶茶。<br>茶以文化面貌出现，是在两晋北朝。若论其起源就要追溯到汉代，有正式文献记载（汉人王褒所写《僮约》）。最早喜好饮茶的多是文人雅仕。</p>
+    
+        <br/>
+        <hr style="background-color:#B5C3A5; height:1.5px;width:100%;border: none;"/>
+    
+        <br/>
+        <p class="p2">茶 叶 起 源</p>
+        <br>
+        <p class="p1" align="center">中国是茶的原产地。中国人对茶的熟悉，上至帝王将相，文人墨客，诸子百家，下至挑夫贩夫，平民百姓，无不以茶为好。<br>人们常说：“开门七件事，柴米油盐酱醋茶”。由此可见茶已深入人民各阶层。同样少数民族也好茶，藏族的酥油茶，蒙古族的奶茶。<br>茶以文化面貌出现，是在两晋北朝。若论其起源就要追溯到汉代，有正式文献记载（汉人王褒所写《僮约》）。最早喜好饮茶的多是文人雅仕。</p>
+    
+    
+        <br>
+    
+        <div id="tpdiv">
+            <div id="tpdiv1">
+                <div class="tpdiv1"><img src="../pic/about_logo_01.png"></div>
+                <div class="tpdiv1"><img src="../pic/about_logo_02.png"></div>
+                <div class="tpdiv1"><img src="../pic/about_logo_03.png"></div>
+                <div class="tpdiv1"><img src="../pic/about_logo_04.png"></div>
+                <div class="tpdiv1"><img src="../pic/about_logo_05.png"></div>
+                <div class="tpdiv1"><img src="../pic/about_logo_06.png"></div>
+            </div>
+    
+            <div id="tpdiv2">
+                <div class="tpdiv2"><img src="../pic/about_logo_07.png"></div>
+                <div class="tpdiv2"><img src="../pic/about_logo_08.png"></div>
+                <div class="tpdiv2"><img src="../pic/about_logo_09.png"></div>
+                <div class="tpdiv2"><img src="../pic/about_logo_10.png"></div>
+                <div class="tpdiv2"><img src="../pic/about_logo_11.png"></div>
+            </div>
+        </div>
+    
+        <hr style="background-color:#B5C3A5; height:1.5px;width:100%;border: none;"/>
+        <br>
+        <p class="p2">留言</p>
+        <div align="center" id="lydiv">
+            <br>
+            <div class='select-box'>
+                <p>已选择城市：杭州</p>
+                <ul>
+                    <li>杭州</li>
+                    <li>北京</li>
+                    <li>苏州</li>
+                    <li>广州</li>
+                    <li>天津</li>
+                    <li>四川</li>
+                </ul>
+            </div>
+            <input name="lxr" type="text" placeholder="联系人" size="70" maxlength="200" class="p1">        
+            <input name="sjh" type="text" placeholder="手机号" size="70" maxlength="200" class="p1">          
+            <input name="yx" type="text" placeholder="邮箱" size="70" maxlength="200" class="p1">           
+            <textarea name="ly" cols="80" rows="4" class="p1" placeholder="留言"></textarea>         
+            <input name="tj" type="submit" class="p1" value="提交" id="tj">
+        </div>
+    
+    
+    
+    
+    
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+  <!---footer--->
+<table  width="100%" cellpadding="0" cellspacing="20"  id="footer">
+        <tr>
+          <td width="25%">
+            <div class="footer-copyright">
+                <strong>Copyright © YiCha Tea</strong>
+            </div>    
+          </td>
+          <td width="25%">
+            <div class="footer-icon">
+                <p>
+                    <a href="#" target="_blank">
+                        <img  src="../pic/footer_Twitter.png" width="30px">
+                    </a>
+                    <a  href="#" class="footer-weixin">            
+                        <img  src="../pic/footer_wechat.png" width="30px">
+                    </a>
+                    <a  href="#" class="footer-app">
+                        <img  src="../pic/footer_weibo.png" width="30px" >
+                    </a>
+                    <a  href="#" class="footer-app">
+                        <img  src="../pic/footer_instagram.png" width="30px" >
+                    </a>
+                    <a  href="#" class="footer-app">
+                        <img  src="../pic/footer_linkedin.png" width="30px" >
+                    </a>
+                </p>
+            </div>
+          </td>
+    
+          <td width="10%" >
+            <div class="footer-logo" >
+                <p><img src="../pic/logo.png" height="100" ></p>
+                <p></p>
+              </div>
+          </td>
+        </tr>
+      </table>
+        
+    
+</body>
+</html>

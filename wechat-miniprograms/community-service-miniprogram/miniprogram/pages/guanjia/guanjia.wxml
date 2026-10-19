@@ -1,0 +1,40 @@
+<form catchsubmit="publish">
+  <!-- 选择商品类型 -->
+  <picker bindchange="bindPickerChange" value="{{array[index]}}" range="{{array}}" name="type">
+    <view class="picker">
+      选择报事类型：{{array[index]}}
+    </view>
+  </picker>
+  <text>请描述您的需求</text>
+  <textarea class="desc" name="content" />
+
+  <text>请输入您的名字</text>
+  <input name="name" />
+
+  <text>请输入您的住址</text>
+  <input name="address"/>
+
+  <text>请输入您的联系方式</text>
+  <input name="phone" type="number" />
+
+
+
+  <text>添加图片</text>
+  <!-- 图片区域 -->
+  <view class="imageRootAll">
+  
+    <!-- 选择图片按钮 -->
+    <view wx:if="{{imgList.length<8}}" class="imgItem" bindtap="ChooseImage">
+      <image class="photo" src="/images/photo.png"></image>
+    </view>
+    <block wx:for="{{imgList}}" wx:key="index">
+      <view class="imgItem">
+        <image class="img" src='{{item}}' mode='aspectFill'></image>
+        <image class="closeImg" bindtap="DeleteImg" src="/images/close.png" data-index="{{index}}" />
+      </view>
+    </block>
+
+  </view>
+
+  <button type="primary" formType="submit">提交报事</button>
+</form>

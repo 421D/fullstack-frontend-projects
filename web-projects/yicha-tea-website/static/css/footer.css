@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+
+#footer {
+	margin-top:200px;
+	width: 100%;
+	height: auto;
+	background-color: #b8d09d;
+	left:0;
+	position:absolute;
+
+	line-height: 150%;
+}
+
+#footer .footer-logo {
+	padding: 100px 100px 50px 100px;
+}
+
+#footer .footer-nav {
+	font-family: "华文细黑";
+	font-size: 1em;
+	padding: 10px 0px 10px 0px;
+}
+
+#footer .footer-text {
+	font-family: "华文细黑";
+	font-size: 1em;
+	padding: 10px 0px 10px 80px;
+	color: #FFF;
+}
+
+#footer .footer-copyright {
+	font-family: "华文细黑";
+	font-size: 0.7em;
+	padding: 10px 0px 10px 80px;
+	color: #fff;
+}
+strong{
+    font-size:20px;
+    color: #0B4219;}
+
+#footer .footer-nav>* {
+	width: auto;
+	display: inline-block;
+}
+
+#footer .footer-icon>p {
+	display: flex;
+	justify-content: left;
+	margin-left: 60px;
+
+}
+#footer .footer-icon img{
+	border: 1px solid #c7d6c6;
+	margin: 10px;
+}
+
+#footer .footer-icon a {
+	width: auto;
+}

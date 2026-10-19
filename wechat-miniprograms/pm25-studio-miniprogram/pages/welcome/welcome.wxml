@@ -1,0 +1,8 @@
+<view class="container">
+  <image src="/images/avatar/LOGO1.png" class="bg"></image>
+  <!-- <image class="avatar" src="../../images/avatar/LOGO.png"></image> -->
+  <text class="motto">PM2.5视频工作室</text>
+  <view catchtap="onTapJump" class="journey-container">
+    <text class="journey">欢迎进入</text>
+  </view>
+</view>

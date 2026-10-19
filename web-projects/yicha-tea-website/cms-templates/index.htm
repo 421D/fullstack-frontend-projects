@@ -1,0 +1,567 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="gb2312">
+    <meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <link href="http://localhost/tea/templets/default/images/index.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+    <title>{dede:global.cfg_webname/}</title>
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <link  href="http://localhost/tea/templets/default/images/head.css" rel="stylesheet" />
+    <link  href="http://localhost/tea/templets/default/images/footer.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+</head>
+
+<body>
+ <!------------------------------banner----------------------->
+    <!--<div class='head'>
+        <ul>
+         	<li></li>
+            <li><a href="index.htm" target="_blank">
+            	<img src="http://localhost/tea/templets/default/images/logo.png" width="100" height="50"></a>
+            </li>
+            <li><a href="index.htm" target="_blank">首页</a></li>
+            <li><a href="shop_list_tea.html" target="_blank">茶叶</a></li>
+            <li><a href="shop_list_cup.html" target="_blank">糕点</a></li>
+            <li><a href="shop_list_cup.html" target="_blank">茶具</a></li>
+            <li><a>论坛</a></li>
+            <li><a href="article_pic.htm" target="_blank">关于我们</a></li>
+            <li><a href="inform_list.htm" target="_blank">消息</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="img"><a href="login.htm" target="_blank"><img src="http://localhost/tea/templets/default/images/banner_login.png" width="30" height="30"></a></li>
+            <li class="img"><a><img src="http://localhost/tea/templets/default/images/banner_gwc.png" width="30" height="30"></a></li>
+            <li></li>
+        </ul>
+    </div>-->
+        {dede:include filename="head.htm"/}
+
+<!------------------------------banner----------------------->
+
+
+<br/><br/>
+
+<!--<img src="http://localhost/tea/templets/default/images/banner.gif" alt="导航" width="100%">-->
+
+<div id="img">
+<script language='javascript'>
+linkarr = new Array();
+picarr = new Array();
+textarr = new Array();
+var swf_width=1100;
+var swf_height=300;
+//文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
+var configtg='0xffffff|2|0x3FA61F|2|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
+var files = "";
+var links = "";
+var texts = "";
+//这里设置调用标记
+{dede:arclist  flag='p'  row='4'  typeid='6'}
+linkarr[[field:global.autoindex/]] = "[field:arcurl/]";
+picarr[[field:global.autoindex/]]  = "[field:litpic/]";
+textarr[[field:global.autoindex/]] = "[field:title function='html2text(@me)'/]";
+{/dede:arclist}
+for(i=1;i<picarr.length;i++){
+if(files=="") files = picarr[i];
+else files += "|"+picarr[i];
+}
+for(i=1;i<linkarr.length;i++){
+if(links=="") links = linkarr[i];
+else links += "|"+linkarr[i];
+}
+for(i=1;i<textarr.length;i++){
+if(texts=="") texts = textarr[i];
+else texts += "|"+textarr[i];
+}
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="{dede:global.cfg_templeturl /}/default/images/bcastr3.swf"><param name="quality" value="high">');
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'">');
+document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+</script>
+</div>
+
+
+
+
+	<br/><br/><br/><br/>
+<div id="mao">
+	<div class="img1"><a href="#zone1"><img src="http://localhost/tea/templets/default/images/index_anchor_01.png" width="200" height="100"></a></div>
+    <div class="img2345"><a href="#zone2"><img src="http://localhost/tea/templets/default/images/index_anchor_02.png" width="200" height="100"></a></div>
+    <div class="img2345"><a href="#zone3"><img src="http://localhost/tea/templets/default/images/index_anchor_03.png" width="200" height="100"></a></div>
+    <div class="img2345"><a href="#zone4"><img src="http://localhost/tea/templets/default/images/index_anchor_04.png" width="200" height="100"></a></div>
+    <div class="img2345"><a href="#article"><img src="http://localhost/tea/templets/default/images/index_anchor_05.png" width="200" height="100"></a></div>
+</div>
+
+
+
+<div id="zone1">
+     <p><font size="+2">新品</font>/专区</p>
+     <div class="index_banner">
+     	<!--<img src="http://localhost/tea/templets/default/images/index_zone_01.png" width="1100" height="250">-->
+        
+        {dede:arclist  typeid='8' row='1' addfields='img1' channelid='6' idlist='45'}
+       <img src="[field:picname/]" width="1100" height="250" />
+          {/dede:arclist}
+          
+     </div>
+
+
+<!--
+		{dede:arclist  typeid='4' row='4'  titlelen='20' orderby='pubdate' addfields='img1,trueprice' channelid='6'}
+             <div><img src="[field:cup1/]" width="263" height="230" /><br /><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">[field:title/]</a><br />会员价：<span>[field:trueprice /]元</span></div>
+        {/dede:arclist}-->
+
+
+    <div class="buttom">
+    	<div class="piece1"> 
+             {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='38'}
+        	<div class="shopimg">
+              
+            	<!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_04.png" width="263px" height="230px">-->
+                <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+            </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+              {/dede:arclist}   
+        </div>
+    
+        
+        
+        
+        
+        
+         <div class="piece234">
+        {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='39'}
+        	<div class="shopimg">
+           <!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_05.png" width="263px" height="230px">-->
+           <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+     
+           </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+            {/dede:arclist}  
+        </div>
+        
+        
+        
+        
+         <div class="piece234">
+        {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='40'}
+        	<div class="shopimg">
+           <!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_05.png" width="263px" height="230px">-->
+           <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+     
+           </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+            {/dede:arclist}  
+        </div>
+        
+        
+        
+         <div class="piece234">
+        {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='41'}
+        	<div class="shopimg">
+           <!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_05.png" width="263px" height="230px">-->
+           <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+     
+           </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+            {/dede:arclist}  
+        </div>       
+    </div>
+</div>  
+
+
+
+
+
+
+<div id="zone1">
+	<font size="+2">特色</font>/专区
+    <div class="index_banner">
+    	<!--<img src="http://localhost/tea/templets/default/images/index_zone_02.png" width="1100" height="250">-->
+         
+        {dede:arclist  typeid='8' row='1' addfields='img1' channelid='6' idlist='46'}
+       <img src="[field:picname/]" width="1100" height="250" />
+          {/dede:arclist}
+    </div>
+
+
+    <div class="buttom">
+    
+    
+    	<div class="piece1"> 
+             {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='42'}
+        	<div class="shopimg">
+              
+            	<!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_04.png" width="263px" height="230px">-->
+                <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+            </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+              {/dede:arclist}   
+        </div>
+    
+        
+        
+        
+        <div class="piece234">
+        {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='43'}
+        	<div class="shopimg">
+           <!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_05.png" width="263px" height="230px">-->
+           <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+     
+           </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+            {/dede:arclist}  
+        </div>
+        
+        
+        
+        
+         <div class="piece234">
+        {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='44'}
+        	<div class="shopimg">
+           <!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_05.png" width="263px" height="230px">-->
+           <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+     
+           </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+            {/dede:arclist}  
+        </div>
+        
+        
+        
+         <div class="piece234">
+        {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='49'}
+        	<div class="shopimg">
+           <!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_05.png" width="263px" height="230px">-->
+           <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+     
+           </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+            {/dede:arclist}  
+        </div>       
+    </div>
+</div>  
+
+
+
+
+
+
+
+<div id="zone1">
+	<font size="+2">推荐</font>/专区
+    <div class="index_banner">
+    <!--<img src="http://localhost/tea/templets/default/images/index_zone_03.png" width="1100" height="250">-->
+     
+        {dede:arclist  typeid='8' row='1' addfields='img1' channelid='6' idlist='47'}
+       <img src="[field:picname/]" width="1100" height="250" />
+          {/dede:arclist}
+    </div>
+
+   
+   
+   
+    <div class="buttom">
+    	<div class="piece1"> 
+             {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='50'}
+        	<div class="shopimg">
+              
+            	<!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_04.png" width="263px" height="230px">-->
+                <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+            </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+              {/dede:arclist}   
+        </div>
+    
+        
+        
+        
+        
+        
+        
+         <div class="piece234">
+        {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='51'}
+        	<div class="shopimg">
+           <!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_05.png" width="263px" height="230px">-->
+           <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+     
+           </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+            {/dede:arclist}  
+        </div>
+        
+        
+        
+        
+         <div class="piece234">
+        {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='52'}
+        	<div class="shopimg">
+           <!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_05.png" width="263px" height="230px">-->
+           <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+     
+           </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+            {/dede:arclist}  
+        </div>
+        
+        
+        
+         <div class="piece234">
+        {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='53'}
+        	<div class="shopimg">
+           <!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_05.png" width="263px" height="230px">-->
+           <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+     
+           </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+            {/dede:arclist}  
+        </div>
+      </div>  
+</div>        
+   
+
+
+
+<div id="zone4">
+	<font size="+2">活动</font>/专区
+    <div class="index_banner">
+    <!--<img src="http://localhost/tea/templets/default/images/index_zone_04.png" width="1100" height="250">-->
+     
+        {dede:arclist  typeid='8' row='1' addfields='img1' channelid='6' idlist='48'}
+       <img src="[field:picname/]" width="1100" height="250" />
+          {/dede:arclist}
+    </div>
+
+    <div class="buttom"> 
+    	<div class="piece1"> 
+             {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='54'}
+        	<div class="shopimg">
+              
+            	<!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_04.png" width="263px" height="230px">-->
+                <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+            </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+              {/dede:arclist}   
+        </div>
+    
+        
+        
+        
+        
+ <div class="piece234">
+        {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='55'}
+        	<div class="shopimg">
+           <!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_05.png" width="263px" height="230px">-->
+           <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+     
+           </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+            {/dede:arclist}  
+        </div>
+        
+        
+        
+        
+         <div class="piece234">
+        {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='56'}
+        	<div class="shopimg">
+           <!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_05.png" width="263px" height="230px">-->
+           <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+     
+           </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+            {/dede:arclist}  
+        </div>
+        
+        
+        
+         <div class="piece234">
+        {dede:arclist  typeid='8' row='1' addfields='img1,price' channelid='6' idlist='57'}
+        	<div class="shopimg">
+           <!--<img src="http://localhost/tea/templets/default/images/shop_list_cup_05.png" width="263px" height="230px">-->
+           <a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474"><img src="[field:img1/]"  class="tupian" width="263" height="230" /> </a>
+     
+           </div>
+            <div>[field:title/]</div>
+            <div><hr color="#b5c3a5" noshade></div>
+            <div>
+            	<div>￥[field:price /]元/kg</div>
+                <div class="add"><p align="right"><a href="http://localhost/tea/a/gaodian/2019/0614/78.html?1560848474">+加入购物车</a></p></div>
+            </div>
+            {/dede:arclist}  
+        </div>       
+	</div>
+</div>
+
+
+
+
+<div class="content">
+<div id="article">
+	<div class="text">
+    	<font size="+2">文章</font>
+   		<span class="span"><a href="http://localhost/tea/freelist/list_article.html">查看更多>></a></span>
+    </div>
+
+    	<div class="article1">
+        	<div class="article_img">
+          {dede:arclist  typeid='8' row='1' addfields='img1' channelid='6' idlist='58'}
+          <img src="[field:picname/]" width="542" height="252" />
+          {/dede:arclist}
+           <!--<img src="http://localhost/tea/templets/default/images/arc_list_01.jpg" width="542px" height="252px">-->
+           </div>
+            <div class="article_title"><a href="http://localhost/tea/freelist/article_article_01.html">十大名茶&middot;杭州</a></div>
+        </div>
+        
+        
+        
+        <div class="article2">
+        	<div class="article_img">
+          {dede:arclist  typeid='8' row='1' addfields='img1' channelid='6' idlist='59'}
+          <img src="[field:picname/]" width="542" height="252" />
+          {/dede:arclist}
+           <!--<img src="http://localhost/tea/templets/default/images/arc_list_02.JPG" width="542" height="252">-->
+           </div>
+            <div class="article_title"><a href="http://localhost/tea/freelist/article_article_02.html">雨前龙井 &middot; 偏爱</a></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+{dede:include filename="footer.htm"/}
+<!------------------------------footer----------------------->
+<!--<div id="footer" align="center">
+	<div class="footer-logo" >
+	  <p><img src="http://localhost/tea/templets/default/images/logo.png" height="73" ></p>
+	</div>
+    
+    <div class="footer-nav">
+        <a href="#">联系我们</a>
+        <span>|</span>
+        <a href="#">订购帮助</a>
+        <span>|</span>
+        <a href="#">企业合作</a>
+        <span>|</span>
+        <a href="#">生产经营资质</a>
+        <span>|</span>
+        <a href="#">公告专区</a>
+    </div>
+    <div class="footer-icon">
+        <p><a href="#" target="_blank">
+          <img  src="http://localhost/tea/templets/default/images/footer_weixin.PNG" width="60px">
+        </a>
+          <a  href="#" class="footer-weixin">            
+            <img  src="http://localhost/tea/templets/default/images/footer_xinlang.PNG" width="60px">
+          </a>
+          <a  href="#" class="footer-app">
+            <img  src="http://localhost/tea/templets/default/images/footer_app.PNG" width="60px" >
+        </a></p>
+    </div>
+    
+    <div class="footer-text">
+        <p>订购专线：400 650 2121（服务时间 08:00&ndash;22:00），企业团购热线：021-37768396<br/>
+        客服电话：021-23099721（全国），kefu@21cake.com（邮箱）<br/>
+        杭州/广州：提前5小时预订；北京：提前6小时预订；上海：提前5.5-6小时预订<br/>
+        当日配送截止下单时间：北京：16:50；上海：16:30；杭州/广州：13:50；天津：10:30；苏州/无锡/深圳：11:00<br/>
+        网站注册公司名称11111111111111111111111111111111111111111111111 </p>
+        <p><br/>
+        </p>
+    </div>
+    
+    
+    <div class="footer-copyright">
+        <span>Copyright &copy; YiCha Tea</a></span>
+    </div>
+</div>-->
+<!------------------------------footer----------------------->
+
+</body>
+</html>

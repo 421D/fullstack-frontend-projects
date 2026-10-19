@@ -1,0 +1,18 @@
+<import src="post-item/post-item-tpl.wxml" />
+<swiper indicator-dots="true" autoplay="true" interval="3000" duration="2000" circular='true'>
+  <swiper-item>
+    <image src="	https://dcdn.it120.cc/2019/12/14/49d0a8b5-9ed8-4450-952f-47a7885292e6.png" />
+  </swiper-item>
+  <swiper-item>
+    <image src="https://dcdn.it120.cc/2019/12/14/edf0a5c5-4ee4-4782-a626-e06dfc2a3860.png" />
+  </swiper-item>
+</swiper>
+
+
+
+
+<block wx:for="{{articles}}" wx:for-item="item" wx:for-index="idx">
+  <view catchtap="onTapToDetail" data-id="{{item.id}}">
+    <template is="postItemTpl" data="{{...item}}" />
+  </view>
+</block>

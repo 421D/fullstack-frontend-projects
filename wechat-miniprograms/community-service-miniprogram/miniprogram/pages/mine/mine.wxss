@@ -1,0 +1,86 @@
+page {
+  background: #92b994;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+  align-items: center;
+  background: #92b994;
+
+}
+
+.bigitem {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  color: #515151;
+  flex-direction: row;
+  font-size:small;
+  justify-content: center;
+  margin-bottom: 100rpx;
+  background: white;
+}
+
+.my-item {
+  padding: 70rpx 100rpx;
+  display: flex;
+  width: 60px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.my-item2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 17px;
+  background: white;
+  border-bottom: 1px solid #92b994;
+}
+
+.my-item-image {
+  width: 30px;
+  height: 30px;
+  overflow: unset;
+  padding: 10px 15px;
+}
+
+.btn-login {
+  padding: 8%;
+  background: white;
+  margin-bottom: 50rpx;
+}
+
+.userinfo-avatar {
+  border-radius: 128rpx;
+  width: 128rpx;
+  height: 128rpx;
+  margin-block-start: 10px;
+
+}
+
+.userinfo-nickname {
+  margin-top: 20rpx;
+  font-size: 38rpx;
+}
+
+.tuichu {
+  font-size: 32rpx;
+  color: gray;
+  margin-top: 15rpx;
+}
+
+
+/*  下面是关键去除边框 */
+.my-item2 button {
+  width: 100%;
+  background: white;
+  border: none;
+  text-align: left;
+  line-height: 1.5;
+  font-size:small;
+}

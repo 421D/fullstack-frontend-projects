@@ -1,0 +1,7 @@
+text{
+  font-family: fantasy;
+  font-size:26rpx;
+}
+page{
+  background-color: #dddddd;
+}

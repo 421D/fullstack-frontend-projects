@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/index/index-detail/index-detail",
+    "pages/post/post",
+    "pages/post/post-detail/post-detail",
+    "pages/post/post-comment/post-comment",
+    "pages/login/login",
+    "pages/login/device/device",
+    "pages/login/myorder/myorder"
+   
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#dddddd",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "PM2.5"
+  },
+  "tabBar": {
+    "selectedColor": "white",
+    "color": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tab/liebiao.png",
+        "selectedIconPath": "images/tab/liebiao_hl.png"
+      },
+      {
+        "pagePath": "pages/post/post",
+        "iconPath": "images/tab/PM2.5.png",
+        "selectedIconPath": "images/tab/PM2.5_hl.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "iconPath": "images/tab/denglu.png",
+        "selectedIconPath": "images/tab/denglu_hl.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

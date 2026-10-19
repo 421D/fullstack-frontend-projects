@@ -1,0 +1,36 @@
+<form catchsubmit="publish">
+  <!-- 选择商品类型 -->
+  <picker bindchange="bindPickerChange" value="{{array[index]}}" range="{{array}}" name="type">
+    <view class="picker">
+      选择闲置商品的类型：{{array[index]}}
+    </view>
+  </picker>
+  <text>请输入商品名</text>
+  <input name="name" />
+  <text>请输入商品价格/元</text>
+  <input name="price" type="number" />
+  <text>请输入商品数量</text>
+  <input name="num" type="number" />
+  <text>请输入商品描述内容</text>
+  <textarea class="desc" name="content" />
+
+
+  <text>添加商品图片</text>
+  <!-- 图片区域 -->
+  <view class="imageRootAll">
+  
+    <!-- 选择图片按钮 -->
+    <view wx:if="{{imgList.length<8}}" class="imgItem" bindtap="ChooseImage">
+      <image class="photo" src="/images/photo.png"></image>
+    </view>
+    <block wx:for="{{imgList}}" wx:key="index">
+      <view class="imgItem">
+        <image class="img" src='{{item}}' mode='aspectFill'></image>
+        <image class="closeImg" bindtap="DeleteImg" src="/images/close.png" data-index="{{index}}" />
+      </view>
+    </block>
+
+  </view>
+
+  <button type="primary" formType="submit">发布商品</button>
+</form>

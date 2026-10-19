@@ -1,0 +1,36 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	font-family:"华文细黑";
+}
+
+
+#big{
+	margin:105px auto;
+	width: 1100px;
+	height:auto;
+}
+
+.top{
+	height: 90px;
+	padding: 30px 0px 0px 0px;
+}
+
+.top .dwz{
+	font-size:2em;
+	color:#0B4219;
+}
+.top .xwz{
+	font-size:0.9em;
+	color:#155C28;
+}
+
+.bottom{
+	height: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 30px;	
+}
+#p1{
+	font-size:1.5em;}

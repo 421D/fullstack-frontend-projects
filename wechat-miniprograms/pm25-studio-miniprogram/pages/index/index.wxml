@@ -1,0 +1,50 @@
+<!--pages/index/index.wxml-->
+
+<view class="ss">
+  <view class="search">
+    <icon type="search" class="search-img" size="13" color="#405f80"></icon>
+    <input type="text" placeholder="植物园、杭州创意艺术中心" placeholder-class="placeholder" />
+    <!-- <image wx:if="{{searchPanelShow}}" src="/images/icon/wx_app_x.png" class="x-img" catchtap="onCancelImgTap"></image> -->
+  </view>
+</view>
+
+
+
+<!-- <view class='list'>
+  <block wx:for="{{language}}" wx:key="index">
+    <view class='text-content'>{{item}}</view>
+  </block>
+</view> -->
+
+
+
+<view class="container">
+
+  <scroll-view class='box_left' scroll-y="true" scroll-with-animation="true">
+    <view class="box_left_items {{categoryId == 79586 ? 'active' : ''}}" data-category-id="79586" bindtap="switchRightTab">
+      DV作品
+    </view>
+
+    <view class="box_left_items {{categoryId == 79587 ? 'active' : ''}}" data-category-id="79587" bindtap="switchRightTab">
+      摄影作品
+    </view>
+
+    <view class="box_left_items {{categoryId == 79589 ? 'active' : ''}}" data-category-id="79589" bindtap="switchRightTab">
+      校园采访
+    </view>
+    
+    <view class="box_left_items {{categoryId == 79588 ? 'active' : ''}}" data-category-id="79588" bindtap="switchRightTab">
+      荣誉好评
+    </view>
+    
+
+  </scroll-view>
+  <view class="box_right">
+    <block wx:for="{{pictures}}" wx:for-index="idx" wx:for-item="item">
+      <view class="box_right_items" data-post-id="{{item.id}}" catchtap="onTapToDetail">
+        <image src="{{item.pic}}"></image>
+        <text>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+</view>

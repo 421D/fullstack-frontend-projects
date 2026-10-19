@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="gb2312">
+	<link href="http://localhost/tea/templets/default/images/list_shop.css" rel="stylesheet" />
+	<link href="http://localhost/tea/templets/default/images/footer.css" rel="stylesheet" />
+    <link href="http://localhost/tea/templets/default/images/head.css" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+    <title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+</head>
+
+<body>
+
+ <!------------------------------banner----------------------->
+    <!--<div class='head'>
+        <ul>
+         	<li></li>
+            <li><a href="index.htm" target="_blank">
+            	<img src="http://localhost/tea/templets/default/images/logo.png" width="100" height="50"></a>
+            </li>
+            <li><a href="index.htm" target="_blank">首页</a></li>
+            <li><a href="shop_list_tea.html" target="_blank">茶叶</a></li>
+            <li><a href="shop_list_cup.html" target="_blank">糕点</a></li>
+            <li><a href="shop_list_cup.html" target="_blank">茶具</a></li>
+            <li><a>论坛</a></li>
+            <li><a href="article_pic.htm" target="_blank">关于我们</a></li>
+            <li><a href="inform_list.htm" target="_blank">消息</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="img"><a href="login.htm" target="_blank"><img src="http://localhost/tea/templets/default/images/banner_login.png" width="30" height="30"></a></li>
+            <li class="img"><a><img src="http://localhost/tea/templets/default/images/banner_gwc.png" width="30" height="30"></a></li>
+            <li></li>
+        </ul>
+    </div>-->
+        {dede:include filename="head.htm"/}
+
+<!------------------------------banner----------------------->
+<div class="kong">
+
+	<ul id="line">
+    
+    
+    
+{dede:arclist  typeid='2'  row='12'  titlelen='60' addfields='img1,price' channelid='6'}
+    	<li class="piece">
+			<img src="[field:img1/]" width="263px" height="230px">
+            <p>[field:title/]</p>
+			<hr color="#b5c3a5" noshade>
+            <p>￥[field:price /]/kg元</p>
+			<p align="right"><a href='[field:arcurl/]'>+加入购物车</a></p>
+        </li>
+{/dede:arclist}
+
+
+
+    	<!--<li class="piece">
+			<img src="../images/shop_list_cake_01.png" width="263px" height="230px">
+            <p>定胜糕</p>
+			<hr color="#b5c3a5" noshade>
+            <p>￥500.00/kg</p>
+			<p align="right"><a href="shop_arc.htm">+加入购物车</a></p>
+        </li>
+        
+        
+        <li class="piece">
+			<img src="../images/shop_list_cake_02.png" width="263px" height="230px">
+            <p>橘红糕</p>
+            <hr color="#b5c3a5" noshade>
+           	<p>￥500.00/kg</p>
+			<p align="right"><a href="shop_arc.htm">+加入购物车</a></p>
+        </li>
+        
+        
+        <li class="piece">
+			<img src="../images/shop_list_cake_03.png" width="263px" height="230px">
+            <p>桂花糕</p>
+            <hr color="#b5c3a5" noshade>
+           	<p>￥500.00/kg</p>
+			<p align="right"><a href="shop_arc.htm">+加入购物车</a></p>
+        </li>
+        
+        
+        <li class="piece">
+			<img src="../images/shop_list_cake_04.png" width="263px" height="230px">
+            <p>蛋黄酥</p>
+            <hr color="#b5c3a5" noshade>
+           	<p>￥500.00/kg</p>
+			<p align="right"><a href="shop_arc.htm">+加入购物车</a></p>
+        </li>
+        
+        
+        <li class="piece">
+			<img src="../images/shop_list_cake_05.png" width="263px" height="230px">
+            <p>蔓越莓绿豆糕</p>
+            <hr color="#b5c3a5" noshade>
+           	<p>￥500.00/kg</p>
+			<p align="right"><a href="shop_arc.htm">+加入购物车</a></p>
+        </li>
+        
+        
+        <li class="piece">
+			<img src="../images/shop_list_cake_06.png" width="263px" height="230px">
+            <p>吴山酥油饼</p>
+            <hr color="#b5c3a5" noshade>
+           	<p>￥500.00/kg</p>
+			<p align="right"><a href="shop_arc.htm">+加入购物车</a></p>
+        </li>
+        
+        
+        <li class="piece">
+			<img src="../images/shop_list_cake_07.png" width="263px" height="230px">
+            <p>藕粉桂花羹</p>
+            <hr color="#b5c3a5" noshade>
+           	<p>￥500.00/kg</p>
+			<p align="right"><a href="shop_arc.htm">+加入购物车</a></p>
+        </li>
+        
+         <li class="piece">
+			<img src="../images/shop_list_cake_08.png" width="263px" height="230px">
+            <p>枣泥山药糕</p>
+            <hr color="#b5c3a5" noshade>
+           	<p>￥500.00/kg</p>
+			<p align="right"><a href="shop_arc.htm">+加入购物车</a></p>
+        </li>
+        
+        
+        <li class="piece">
+			<img src="../images/shop_list_cake_09.png" width="263px" height="230px">
+            <p>不破酥</p>
+            <hr color="#b5c3a5" noshade>
+           	<p>￥500.00/kg</p>
+			<p align="right"><a href="shop_arc.htm">+加入购物车</a></p>
+        </li>
+        
+        
+        <li class="piece">
+			<img src="../images/shop_list_cake_10.png" width="263px" height="230px">
+            <p>荷花酥</p>
+            <hr color="#b5c3a5" noshade>
+           	<p>￥500.00/kg</p>
+			<p align="right"><a href="shop_arc.htm">+加入购物车</a></p>
+        </li>
+        
+        
+        <li class="piece">
+			<img src="../images/shop_list_cake_11.png" width="263px" height="230px">
+            <p>云片糕</p>
+            <hr color="#b5c3a5" noshade>
+           	<p>￥500.00/kg</p>
+			<p align="right"><a href="shop_arc.htm">+加入购物车</a></p>
+        </li>
+        
+        
+        <li class="piece">
+			<img src="../images/shop_list_cake_12.png" width="263px" height="230px">
+            <p>煤球酥</p>
+            <hr color="#b5c3a5" noshade>
+           	<p>￥500.00/kg</p>
+			<p align="right"><a href="shop_arc.htm">+加入购物车</a></p>
+        </li>
+        -->
+
+	</ul>
+</div>
+
+
+{dede:include filename="footer.htm"/}
+<!------------------------------footer----------------------->
+<!--<div id="footer" align="center">
+	<div class="footer-logo" >
+	  <p><img src="http://localhost/tea/templets/default/images/logo.png" height="73" ></p>
+	</div>
+    
+    <div class="footer-nav">
+        <a href="#">联系我们</a>
+        <span>|</span>
+        <a href="#">订购帮助</a>
+        <span>|</span>
+        <a href="#">企业合作</a>
+        <span>|</span>
+        <a href="#">生产经营资质</a>
+        <span>|</span>
+        <a href="#">公告专区</a>
+    </div>
+    <div class="footer-icon">
+        <p><a href="#" target="_blank">
+          <img  src="http://localhost/tea/templets/default/images/footer_weixin.PNG" width="60px">
+        </a>
+          <a  href="#" class="footer-weixin">            
+            <img  src="http://localhost/tea/templets/default/images/footer_xinlang.PNG" width="60px">
+          </a>
+          <a  href="#" class="footer-app">
+            <img  src="http://localhost/tea/templets/default/images/footer_app.PNG" width="60px" >
+        </a></p>
+    </div>
+    
+    <div class="footer-text">
+        <p>订购专线：400 650 2121（服务时间 08:00&ndash;22:00），企业团购热线：021-37768396<br/>
+        客服电话：021-23099721（全国），kefu@21cake.com（邮箱）<br/>
+        杭州/广州：提前5小时预订；北京：提前6小时预订；上海：提前5.5-6小时预订<br/>
+        当日配送截止下单时间：北京：16:50；上海：16:30；杭州/广州：13:50；天津：10:30；苏州/无锡/深圳：11:00<br/>
+        网站注册公司名称11111111111111111111111111111111111111111111111 </p>
+        <p><br/>
+        </p>
+    </div>
+    
+    
+    <div class="footer-copyright">
+        <span>Copyright &copy; YiCha Tea</a></span>
+    </div>
+</div>-->
+<!------------------------------footer----------------------->
+
+
+
+</body>
+</html>

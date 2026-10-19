@@ -1,0 +1,18 @@
+<template name="postItemTpl">
+<view class="post-container">
+  <view class="post-author-date">
+    <image src="/images/post/LOGO.png"></image>
+    <text>{{dateAdd}}</text>
+  </view>
+  <!-- <text class="post-list">{{title}}</text> -->
+  <image class="post-image" src="{{pic}}"></image>
+  <text class="post-content">{{descript}}</text>
+  <view class="post-like">
+   <image src="/images/icon/dianzan.png"></image>
+   <text>{{keywords}}</text>
+      <image src="/images/icon/pinglun.png"></image>
+      <image src="/images/icon/shoucang.png"></image>
+   <text>{{paixu}}</text>
+  </view>
+</view>
+</template>

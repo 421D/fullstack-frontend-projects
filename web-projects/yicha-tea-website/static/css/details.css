@@ -1,0 +1,163 @@
+.content{
+	width:1100px;
+	margin:105px auto;
+}
+#div1 {
+	width: 100%;
+	height: auto;
+}
+p{
+    text-align: center;
+}
+
+.div2 {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 920px;
+	height: 518px;
+	float: left;
+}
+
+.div3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 10px;
+	width: 150px;
+	height: 518px;
+	float: left;
+}
+
+.div4 {
+	margin-top: 240px;
+	height: 84px;
+	float: none;
+}
+
+.div5 {
+	margin-top: 13px;
+	height: 84px;
+	float: none;
+}
+
+.div6 {
+	margin-top: 13px;
+	height: 84px;
+	float: none;
+}
+
+
+
+#div2 {
+	width: 1100px;
+	height: 500px;
+}
+
+.wzdiv1 {
+	margin-top: 10px;
+	height: 480px;
+	width: 520px;
+	margin-left: 18px;
+	float: left;
+}
+
+p {
+	font: "华文细黑";
+	font-size: 1.2em;
+	color: #0b4219;
+}
+
+.wzdiv2 {
+	width: 520px;
+	height: 30px;
+	float: left;
+}
+
+.tpdiv {
+	margin-left: 20px;
+	height: 30px;
+	width: 30px;
+	float: left;
+}
+
+.wzdiv3 {
+	margin-left: 30px;
+	width: 200px;
+	height: 30px;
+	float: left;
+	font: "华文细黑";
+	font-size: 0.8em;
+	line-height: 40px;
+	color: #0b4219;
+
+}
+
+.p1 {
+	font: "华文细黑";
+	font-size: 1em;
+	line-height: 40px;
+	color: #0b4219;
+}
+
+.twdiv {
+	height: 200px;
+	width: 520px;
+}
+
+.tpdiv1 {
+	height: 200px;
+	width: 350px;
+	float: left;
+}
+
+.wz {
+	margin-top: 170px;
+	width: 165px;
+	height: 30px;
+	float: left;
+	font: "华文细黑";
+	font-size: 1.5em;
+	line-height: 40px;
+	color: #0b4219;
+}
+
+.gwc {
+	width: 520px;
+	height: 40px;
+	float: left;
+}
+
+.gwc1 {
+	margin-left: 7px;
+	height: 40px;
+	width: 240px;
+	border: none;
+	float: left;
+	color: #0b4219;
+	font: "华文细黑";
+}
+
+.gwc2 {
+	margin-left: 13px;
+	height: 40px;
+	width: 240px;
+	border: none;
+	background: #0b4219;
+	color: #FFF;
+	float: left;
+}
+
+hr {
+	width: 1100px;
+	size: 2px;
+	background: #CCC;
+}
+
+#bigtudiv {
+	margin: 20px 0px 10px 0px;
+	width: 1100px;
+	height: 620px;
+
+}
+

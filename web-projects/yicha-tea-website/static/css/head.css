@@ -1,0 +1,48 @@
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 800px;
+    height: 80px;
+    background: #b8d09d;
+    box-shadow: 0 0 5px 5px #ccc;
+    margin: 0 auto;
+}
+
+.head ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.head ul li {
+    list-style: none;
+    flex-grow: 1;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+    color: #FFF ;
+    transition: all 0.3s;
+}
+
+
+.head a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #FFF ;
+}
+
+.head a:link {
+    color:#fff;
+    text-decoration:none;
+    }    
+.head li a:hover {
+    color: #0b4219 !important;
+    }
+.head li a:visited {
+    color: #fff ;
+    }

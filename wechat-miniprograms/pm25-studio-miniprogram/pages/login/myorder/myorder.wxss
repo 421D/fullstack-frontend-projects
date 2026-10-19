@@ -1,0 +1,14 @@
+/* pages/login/myorder/myorder.wxss */
+.container{
+  width: 500rpx;
+  position: absolute;
+  margin-left: 38%;
+  margin-top: 50%;
+
+}
+
+
+text{
+  font-family: "华文细黑";
+  font-size: 36rpx;
+}

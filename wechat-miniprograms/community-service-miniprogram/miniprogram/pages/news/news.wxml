@@ -1,0 +1,9 @@
+<view bindtap="clickRow" data-id="{{item._id}}" data-idx="{{index}}" class="row" wx:for="{{dataList}}" wx:key="index">
+  <view class="title">{{item.title}}</view>
+  <view class="box">
+    <view class="author">发布人：{{item.author}}</view>
+    <view class="hits">浏览量：{{item.hits}}</view>
+  </view>
+  <view class="content">{{item.content}}</view>
+
+</view>

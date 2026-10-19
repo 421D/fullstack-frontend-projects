@@ -1,0 +1,9 @@
+<!--pages/index/index-detail/index-detail.wxml-->
+
+<view class="container">
+    <text class="title">{{pictures[0].name}}</text>
+    <view>
+      <image class="box-image" src="{{pictures[0].pic}}"></image>
+    </view>
+
+</view>

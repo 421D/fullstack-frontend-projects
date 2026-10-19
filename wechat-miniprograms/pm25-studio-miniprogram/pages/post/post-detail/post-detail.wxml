@@ -1,0 +1,55 @@
+<!--pages/post/post-detail/post-detail.wxml-->
+<view class="container">
+  <image class="head-image" src="{{articles[0].pic}}"></image>
+  <text class="title">{{articles[0].title}}</text>
+  <view class="author-data">
+    <view class="author-box">
+      <image class="avatar" src="{{articles[0].pic}}"></image>
+      <text class="data">{{articles[0].dateAdd}}</text>
+    </view>
+    <text class="detail">{{articles[0].descript}}</text>
+  </view>
+
+  <text class="detail">{{articles[0].detail}} </text>
+
+
+  <view class="img-box">
+    <image class="content-image" src="{{post.contentImg.img1}}"></image>
+    <!-- <image class="content-image" src="{{post.contentImg2}}"></image>
+    <image class="content-image" src="{{post.contentImg3}}"></image>
+    <image class="content-image" src="{{post.contentImg4}}"></image>
+    <image class="content-image" src="{{post.contentImg5}}"></image>
+    <image class="content-image" src="{{post.contentImg6}}"></image> -->
+
+    <image class="content-image" wx:for="{{contentImg1}}"></image>
+  </view>
+
+  <!-- 
+  <block wx:for="{{contentImg}}" wx:for-item="item">
+    <view>
+      <image class="content-img" src="{{post.contentImg}}"></image>
+      <text>qqq</text>
+    </view>
+  </block> -->
+
+</view>
+
+
+
+
+<view class="tool">
+  <view class="tool-item" catchtap="onUpTap" data-post-id="{{post.postId}}">
+    <image wx:if="{{post.upStatus}}" src="/images/icon/dianzan_hl.png" />
+    <image animation="{{animationUp}}" wx:else src="/images/icon/dianzan.png" />
+    <text>{{post.upNum}}</text>
+  </view>
+  <view class="tool-item comment" catchtap="onCommentTap" data-id="{{articles[0].postId}}">
+    <image src="/images/icon/pinglun.png"></image>
+    <text>{{articles[0].commentNum}}</text>
+  </view>
+  <view class="tool-item" catchtap="onCollectionTap" data-post-id="{{post.postId}}">
+    <image wx:if="{{post.collectionStatus}}" src="/images/icon/shoucang_hl.png" />
+    <image wx:else src="/images/icon/shoucang.png" />
+    <text>{{post.collectionNum}}</text>
+  </view>
+</view>

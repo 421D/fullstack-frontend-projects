@@ -1,0 +1,62 @@
+{
+  "pages": [   
+    
+    "pages/index/index",
+    "pages/mybaoshi/mybaoshi", 
+    "pages/news/news",
+    "pages/mine/mine",
+    "pages/myorder/myorder",
+    "pages/mall/mall",
+    "pages/pay/pay",
+    "pages/detail/detail",
+    "pages/guanjia/guanjia",
+    "pages/fabu/fabu",
+    
+    "pages/kefu/kefu",
+    "pages/mysell/mysell"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#92b994",   
+    "navigationBarTitleText": "社区便民服务",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#81c984",
+    "borderStyle": "white",
+    "list": [{
+        "selectedIconPath": "/images/tab1-ok.png",
+        "iconPath":"/images/tab1.png",
+        "pagePath": "pages/index/index",
+        "text": "邻里"
+      },
+      {
+        "selectedIconPath": "/images/tab2-ok.png",
+        "iconPath": "images/tab2.png",
+        "pagePath": "pages/guanjia/guanjia",
+        "text": "管家"
+      },
+      {
+        "selectedIconPath": "/images/tab3-ok.png",
+        "iconPath": "images/tab3.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {   
+    "scope.address": {
+      "desc": "获取收货地址"
+    },
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    },
+    "scope.userInfo": {
+      "desc": "用户信息"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

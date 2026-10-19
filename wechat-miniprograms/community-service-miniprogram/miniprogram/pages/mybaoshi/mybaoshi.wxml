@@ -1,0 +1,25 @@
+<!-- <view bindtap="clickRow" 
+data-id="{{item._id}}" 
+data-idx="{{index}}" 
+class="row" 
+wx:for="{{dataList}}" 
+wx:key="index">
+  <view class="title">{{index+1}}、{{item.title}}</view>
+  <view class="hits">浏览量：{{item.hits}}</view>
+  <view class="content">{{item.content}}</view>
+  
+</view> -->
+<view class="row" wx:for="{{dataList}}" wx:key="index">
+
+  <view class="type">{{index+1}}、报事类型：<text>{{item.type}}</text></view>
+  <view class="content">报事内容：{{item.content}}</view>
+
+  <image src="{{item.img}}" bindtap="clickImg"/>
+
+<view class="xinxi">
+  <view class="name">姓名：{{item.name}}</view>
+  <view class="phone">联系方式：{{item.phone}}</view>
+</view>
+<view class="address">住址：{{item.address}}</view>
+
+</view>
