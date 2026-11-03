@@ -2,6 +2,8 @@
 
 A WeChat Mini Program for a residential community: residents list and buy second-hand goods from neighbours, read property-management news, find property contacts, and submit repair requests or complaints. It runs entirely on WeChat Cloud Development (cloud database, cloud storage and cloud functions), so there is no separate server.
 
+**My role:** solo project. I built the whole app: every page, the cloud database design and all 8 cloud functions.
+
 ## How it works
 
 - **Identity.** On launch, `app.js` calls the `getOpenid` cloud function and caches the user's openid. Buying and the "Mine" lists also need a WeChat profile, requested with `wx.getUserProfile`.
